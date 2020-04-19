@@ -1,0 +1,133 @@
+.intro div>h2{
+    float: left;
+    text-align: center;
+    margin-right: 1%;
+    
+}
+.intro .ch{
+        margin-left: 25%;
+}
+.intro .ch a{
+        color:white;
+        text-decoration: none;
+}
+.up-events-sec{
+    width: 100%;
+    float: left;
+    background-color: #232323;
+}
+.upcoming-events{
+    display: flex;
+    letter-spacing: -0.6px;
+    
+}
+.widget-wrapper{
+    padding: 3% 3% 0 0;   
+}
+
+.widget-wrapper h2{
+    font-size: 50px; 
+    font-weight: 700;  
+    margin-top: 6%;
+}
+.widget-wrapper h3 a, .video-heading a{
+    font-size: 20px;   
+    font-weight: 600;
+    color: #CE0000;
+    margin-top: 1%;
+    text-decoration: none;
+
+}
+.countdown-clock{
+    padding: 7%;
+    padding-left: 0;
+}
+.countdown-clock ul{
+    display: flex;
+}
+
+.countdown-clock ul li{
+    margin-right: 2%;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2;
+    color: #898989;
+    list-style-type: none;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.9);
+    width: 170px;
+    height: 200px;
+    
+}
+.countdown-clock ul li span {
+    display: block;
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+}
+.video-wrapper{
+    padding:5%;
+    background-color: white;
+    color: black;
+}
+.video-wrapper img{
+    width: 350px;
+}
+.video-heading h3{
+    font-size: 40px;
+    font-weight: 750;
+    padding:6% 0 2.5% 0;
+}
+a:active{
+    color:none;
+}
+.latest-events{
+    float: left;
+    letter-spacing: -0.6px;
+}
+.events h2{
+    font-size: 60px; 
+    font-weight: 700;
+    color: #CE0000;
+    margin: 3% 0 5% 0;
+}
+.events img{
+    width: 500px;
+}
+.events > div{
+    display: flex;
+}
+.events-details{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.events-details h3{
+    font-size: 35px; 
+    font-weight: 700;
+}
+.event-meta{
+    font-size: 18px;
+    font-weight: 600;
+}
+.event-meta span{
+    color: #CE0000;
+}
+.event-meta span::after{
+    content: ".";
+    font-size: 50px;
+    padding: 1%;
+}
+.event-meta p{
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-style: italic;
+}
+.latest-events .btn{
+    float: right;
+    margin: 2% 0;
+    padding: 2%;
+    font-weight: 650;
+    font-size: 22px;
+}

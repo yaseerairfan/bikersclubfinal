@@ -1,0 +1,990 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......Page loader......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #979797;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+} 
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid black;
+    animation: loader 2s infinite ease;
+   
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
+.container{
+	margin:auto;
+	padding:0 10px;
+    max-width:1175px;
+}
+body{
+    font-family: 'Lato';
+    color: white;
+    background-color: #333333;
+    overflow-x: hidden;
+}
+
+header{  
+    width: 100%;
+    float: left;
+    padding:0 0 10px 0;  
+}
+.main{
+    width: 100%;
+    float: left;
+}
+footer{
+    width: 100%;
+    float: left;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......ScrollBar Customization......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+::-webkit-scrollbar{
+    background-color: #898989;
+    width: 1%;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px black;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#3d3b3b, #242323);
+    border-radius: 30%;
+}
+/* _____________________________________________________________________________________________ */
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-dec{
+    text-decoration: none;
+    color: white;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......HEADER SECTION 1.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.upper-nav ul, .lower-nav ul{
+    display: flex ;
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: 1%;
+    box-sizing: border-box;
+}
+.upper-nav ul{
+    margin: 0px 3% 0px 0px;
+    padding: 1% 1% 1.5% 1%;
+}
+
+.search-popUp{
+    background:black;
+    opacity: 0.8; 
+    width:100%;
+    height: 100vh; 
+    position: absolute;; 
+    z-index:41; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-popUp button{
+    border: 0;
+    background: 0;
+    color: #fff;
+}
+.main-search-bar{
+    display: inline-block;
+    padding: 2%;
+    outline: none;
+    border: none;
+    border-bottom: 4px solid #333333;
+    font-size: 40px;
+    background-color: transparent;
+}
+
+.cross-icon{
+    font-size: 40px;
+    color: #858585;
+    position: absolute;
+    top: 6%;
+    right: 4%;
+}
+
+
+.main-search-icon:hover , .cross-icon, .search-it-now{
+    cursor: pointer;
+
+}
+.search-it-now{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+}
+.upper-nav ul li,.lower-nav ul li{
+    margin-left: 10px;
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+.upper-nav ul li{
+    padding-left: 2%;
+}
+.upper-nav i{
+    padding-right: 4px;
+}
+.upper-nav ul li , .lower-nav ul li i{
+    color: #CE0000;
+    font-size: 17px;
+}
+.lower-nav ul li i {
+    font-size: 21px;
+    padding-bottom: 8px;
+    margin-bottom: 6px;
+}
+.upper-nav ul li i {
+    font-size: 21px;
+}
+.upper-nav ul li:nth-child(4), .lower-nav ul li:nth-child(n+2){
+    color: white;
+    border-left: 2px solid #898989;
+   
+}
+.lower-nav ul li{
+    text-align: center;  
+    padding: 13px 20px 0px 20px;
+}
+.lower-nav ul li:nth-child(1){
+    text-align: right;  
+}
+.upper-nav ul li a{
+    color:#CE0000;
+    text-decoration: none;
+}
+.lower-nav ul li a{
+    color:aliceblue;
+    text-decoration: none;
+    
+}
+.lower-nav{
+    padding-bottom: 3px;
+}
+.mobile-icon{
+    padding-right: 5px;
+}
+.call-timings{
+    color: #979797;
+    padding-top: 2px;
+}
+.logonav{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #898989;
+}
+
+.logonav .logo a, .logonav span{
+    color:white;
+    font-size: 51px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -1px;
+    
+}
+.logo span{
+    color:#CE0000; 
+}
+.logo p{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.upper-nav i:hover, .lower-nav i:hover{
+    color: #Ce0044;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......HEADER SECTION 2 .......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.main-nav{
+    width: 100%;
+    float: left;
+    background-image: url(../images/biker.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.navigation{
+    width:30% ;
+    float: left;
+    background-color: black ;
+    opacity: 0.6;
+    
+    
+}
+.navigation ul{
+    margin: 14% 17% 50% 0%;
+}
+.navigation ul li{
+    list-style: none;
+    text-decoration: none;
+    padding: 4%;
+    text-align: right;
+    font-size: 20px;
+    line-height: 0.289in;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navigation ul li a.active {
+    color: #e81938;
+}
+.navigation ul li a:hover{
+    color:#CE0000;
+}
+.intro{
+    width: 70%;
+    float: left;
+}
+.intro > div{
+    width: 80%;
+    
+    margin-top: 3%;
+}
+.intro h2{
+    font-size: 23px;
+    font-weight:lighter;
+}
+.intro h1{
+    font-size: 85px;
+    font-weight: 900;
+}
+.intro p{
+    width: 100%;
+    margin-bottom:9%;
+    font-size: 17px;
+    font-weight:lighter;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+.btn{
+    background-color:#CE0000;
+    padding:3%;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    font-weight: lighter;
+    outline: none;
+        
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    transition:all ease-out 0.3s;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......SCROLL TO TOP BUTTON.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.scroll-top{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #CE0000;
+    outline: none;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......SECTION 1.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.club-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+}
+.club-info .btn{
+    padding: 4.5%;
+}
+.club-info > div{
+    margin-top: -5%;
+    background-color: #CE0000;
+    padding: 3.5%;
+    width: 73%;
+    box-sizing: border-box;
+    position: relative;
+}
+.club-info >div >h2{
+    font-size: 40px;
+}
+.text-and-gallary{
+    margin: 3% 0% 5% 0%;
+    display:flex;
+    
+}
+.text-and-gallary .text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 5%;
+    margin-top: 3.5%;
+    padding-right: 0%;
+    margin-right: 3%;
+}
+.text-and-gallary .text h3{
+
+    font-size: 25px;
+}
+.text-and-gallary .text p{
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 9%;
+    margin-bottom: 5%;
+    
+}
+.gallary button.slick-next:before {
+    content: "\203A";
+        font-size: 56px;
+        font-weight: 900;
+        
+}
+.gallary button.slick-prev:before {
+    content: "\2039";
+        font-size: 56px;
+        font-weight: 900;
+        
+}
+.gallary .slick-prev {
+    left: -34px;
+}
+
+.gallary .slick-next {
+    right: -32px;
+}
+.club-info .btn{
+    border: 1px solid white;
+    width: 37%;
+}
+.text-and-gallary .gallary{
+    width: 55%;
+    
+    margin-top: 1.5%;
+    border:5px solid white;
+    margin-left: 2%;
+}
+.gallary img{
+    width:100%;
+    
+}
+/* .gallary div{
+    border:1px solid white;
+} */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......SECTION 2.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.rider-text{
+    width: 75%;
+    padding: 9% 0% 10% 0%;
+}
+.rider-text h2{
+    font-size: 40px;
+    margin-bottom: 4%;
+}
+.rider-text p{
+    font-size: 17px;
+    margin-bottom: 3%;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+.riders-wrapper{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/text-area-bg.PNG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.riders{
+    width:100%;
+    float: left;
+    
+}
+
+.riders img{
+    width:100%;
+
+}
+.riders-stories{
+    width: 80%;
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 6%;
+}
+.riders-stories > div{
+    padding: 4%;
+}
+.riders-stories h2{
+    font-size: 40px;
+} 
+.riders-stories p{
+    font-size: 17px;
+    margin: 8% 0% 13% 0%;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+.riders-stories .btn{
+    padding:3.5% 6%;
+}
+.riders.slick-slider{
+    margin-top: -70px;
+}
+.riders .slick-slide.slick-center
+{
+    margin-top: -1%;
+    transition: 1s all ease;
+}
+.riders .slick-list{
+    padding-top:60px !important;
+    
+}
+.riders .slick-slide{
+    height: auto;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......SECTION 3.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.testomoinal{
+    width: 100%;
+    float: left;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/signup-bg.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.tmslider{
+    padding: 6%;
+    
+}
+.tmslider .slick-slide {
+margin-right: 20px;
+}
+.crew-1{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/john.jpg);   
+}
+.crew-2{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/octavia.jpg);   
+}
+.crew-3{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/raven.jpg);   
+}
+.crew-4{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/moriarty.jpg);
+}
+.tm1 .pic > div{
+    width:120px;
+	height:120px;
+    border-radius:50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+	
+}
+.tmslider.slick-slide{
+    margin: 10%;
+}
+.tmslider button.slick-prev:before {
+    content: "\2039";
+    font-size: 56px;
+    font-weight: 900;
+}
+.tmslider button.slick-next:before {
+    content: "\203A";
+    font-size: 56px;
+    font-weight: 900;
+}
+.tmslider button.slick-next {
+    right: 48%;
+    top: 86%;
+}
+.tmslider button.slick-prev {
+    left: 43%;
+    top: 86%;
+    z-index: 99;
+}
+.tm1 .pic{
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+.tm1 .text p{
+    font-family: "Lato";
+    font-style: italic;
+    font-size: 17px;
+    padding-bottom: 6%;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+.text h2{
+    font-size: 25px;
+    padding-bottom: 1%;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......SECTION 5.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.bike-categories{
+    width: 100%;
+    float: left;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/bike-categories-bg.PNG);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bike-categories > div{
+    width: 80%;
+    margin: 9% 0% 9% 0% ;
+    /* float: left; */
+}
+.bikes-details{
+    margin: 0% 2% 0% 1.6% ;
+}
+.bikes-details h2{
+    font-size: 40px;
+}
+
+.bikes-details p{
+    margin: 3% 0% 4% 0%;
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+.category-slider{
+    width: 100%;
+    /* float: left; */
+    /* box-sizing: border-box; */
+}
+.category-slider button.slick-next:before {
+    content: "\203A";
+        font-size: 56px;
+        font-weight: 900;
+        
+}
+.category-slider button.slick-prev:before {
+    content: "\2039";
+        font-size: 56px;
+        font-weight: 900;
+        
+}
+.category-slider .slick-prev {
+    top: 95px;
+}
+
+.category-slider .slick-next {
+    top: 95px;
+}
+.category-slider div{
+
+    margin: 0.3%;
+}
+.category-slider img{
+    /* float: left; */
+    width: 100%;
+    height: 210px;
+}
+
+.bike-info-btn{
+    padding: 7% 13% 7% 13%;
+    margin-left: 15.5%;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......SECTION 6.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.blog{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:#242323 ;
+}
+.blog-details{
+    width: 28%;
+    background-color: #CE0000;
+    /* box-sizing: border-box; */
+    padding: 9% 1.5% 9% 5%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.blog-details h2{
+    font-size: 40px;
+}
+.blog-details p{
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin: 8% 0% 11% 0%;
+}
+.blogs{
+    width:72%;
+    display: flex;
+    flex-wrap: wrap;
+      
+}
+.blogs div{
+    width: 50%;
+    display: block;
+    position: relative;
+}
+.blog-wrapper img, .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.overlay{
+    float: left;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#blog-h3{
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+#blog-h3::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 5px;
+    background-color: red;
+    transition: all 1s linear;
+}
+.blog-wrapper:hover #blog-h3::before{
+    width: 100%;
+}
+.blogs img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.blog .btn{
+    border: 1px solid white;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......SECTION 7.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.newsletter{
+    width: 100%;
+    float: left;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/testomoinal.PNG);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.newsletter > div{
+    width: 80%;
+    margin: 8% 0% 8% 0%;
+}
+.signup-heading{
+    font-size: 40px;
+}
+.signup-heading:before{
+    content: 'SIGNUP';
+    font-weight: bolder;
+}
+.email-address{
+    width: 100%;
+    display: flex;
+    margin-top: 3%;
+    /* box-sizing: border-box; */
+}
+.email-address form{
+    width: 100%;
+}
+.email-address input{
+    outline: none;
+    color: white;
+}
+.email-address p{
+    width: 42%;
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    
+}
+.email-address div{
+    width: 58%;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 5%;
+    margin-top: 0.9%;
+    
+}
+
+.email-address input{
+    font-size: 20px;
+    color: #898989;
+    width: 70%;
+    box-sizing: border-box;
+    padding:4%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.email-address .btn{
+    border: none;
+    background-color:#CE0000;
+    width: 23%;
+    box-sizing: border-box;
+    padding: 4.1% 21.7% 4.2% 7.7%;
+    margin-left: -3px;
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+}
+.email-address .btn:hover{
+    cursor: pointer;
+}
+.newsform label{
+    display: block;
+    float: left;
+    color:red
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......footer SECTION 1.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.footer-top{
+    width: 100%;
+    /* float: left; */
+}
+.footer-top > div{
+    width: 80%;
+    margin: 4.5% 0% 4% 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top > div > div{
+    width: 17%;
+    /* float: left; */
+}
+.footer-top ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.footer-top ul li a{
+    color: white;
+}
+.motclub-icon, .motclub-icon i, .motclub-icon span{
+    font-size: 20px;
+}
+.motclub-icon span{
+    font-weight: bold;
+}
+.motclub-icon a{
+    text-decoration: none;
+    color: white;
+}
+.social-media-icons li a:hover , .motclub-icon i:hover{
+    color: #CE0000;
+    transition:all ease-out 0.5s;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......footer SECTION 2.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.info{
+    width: 100%;
+    float: left;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/info-bg.PNG);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+address{
+    font-style: normal;
+}
+.info >div{
+    /* width: 80%; */
+    margin: 9% 0% 7% 0%;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+.info > div > div{
+    width: 32%;
+}
+.info h2{
+    font-size: 25px;
+}
+.about-div p{
+    font-size: 17px;
+    line-height: 2;
+    letter-spacing: 1px;
+    width: 85%;
+    margin: 8% 0% 16% 0%;
+    color: #858585;
+}
+.about-div .btn{
+    margin-right: 55%;
+    padding:5% 8%;
+}
+.info .container{
+    position: relative;
+    
+}
+
+.countdown-clock ul li{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.8;
+    color: #898989;
+    list-style-type: none;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.9);
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    
+}
+.countdown-clock ul li span {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.events{
+    width: 100%;
+    margin-top: 10%;
+}
+.info .container{
+    display: flex;
+}
+.events > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.event-date{
+    /* float: left; */
+    /* width: 17.5%; */
+    background-color: #CE0000;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 2% 4% 1% 4%;
+}
+.event-date a,.event-details a{
+    color:white;
+    text-decoration: none;
+}
+.event-date p {
+    font-size: 12px;
+}
+.event-date div{
+    /* margin-top: -12%; */
+    margin-bottom: 12%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.event-details{
+    float: left;
+    width: 77.5%;
+    
+}
+.event-details h3{
+    font-size: 17px;
+    margin-top: -1.2%;
+}
+.event-details p{
+    margin-top: 4%;
+    font-size: 17px;
+    color: #858585;
+}
+
+.address{
+    width: 100%;
+    float: left;
+    margin-top: 8%;
+}
+.address div{
+    width: 100%;
+}
+.address div:nth-child(2){
+    color: #858585;
+    font-size: 17px;
+}
+.address div:nth-child(2) h3{
+    margin: 9% 0% 4% 0%;
+    color: white;   
+}
+.address h3{
+    font-size: 17px;
+}
+.email{
+    display: flex;
+    margin-top: 12%;
+}
+.email div:nth-child(1){
+    width: 15%;
+    float: left;
+}
+.email div:nth-child(2){
+    width: 70%;
+    float: left;
+    margin-left: 4%;
+}
+.email a{
+    color: #858585;
+    padding-left: 22px;
+    font-size: 17px;
+}
+.phone-num{
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%.......footer SECTION 3.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.copy-right{
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    margin: 1.3% 0% 1.3% 0;
+}

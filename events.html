@@ -1,0 +1,394 @@
+<html>
+
+<head>
+  <title>Upcoming Events&nbsp;&ndash;&nbsp;Bikers&nbsp;Club</title>
+  <!-- JS -->
+  <!-- jquery -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- jquery-ui -->
+  <script src="assets/js/jquery-ui/jquery-ui.min.js"></script>
+  <!-- animationjs -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  <!-- slick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <!-- fancybox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+  <!-- Stylesheets -->
+  <!-- font-family -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+  <!-- fancybox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <!-- local CSS -->
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <link rel="stylesheet" href="assets/css/events.css">
+</head>
+
+<body>
+  <div class="loader-wrapper" id="preloader">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <div class="search-popUp" id="search-popU">
+    <form action="index.html">
+      <input id="main-search-engine" class="main-search-bar" type="text" placeholder="Search...">
+      <button type="submit"><i class="fas fa-search search-it-now"></i></button>
+    </form>
+    <i class="fas fa-times cross-icon" id="cross-icon"></i>
+
+
+  </div>
+  <header>
+    <section>
+      <div class="container">
+        <div class="upper-nav">
+
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fas fa-user"></i>My Account
+              </a>
+            </li>
+            <li>
+              <a href="shop.html">
+                <i class="fas fa-shopping-cart"></i>
+                Cart
+              </a>
+            </li>
+            <li><a href="#">
+                <i class="fas fa-check-circle"></i>
+                Check Out
+              </a>
+            </li>
+            <li class="main-search-icon" id="main-search-icon">
+              <i class="fas fa-search"></i>
+            </li>
+          </ul>
+
+        </div>
+        <div class="logonav">
+          <div class="logo">
+            <a href="index.html">
+              Bikers<span>Club</span>
+            </a>
+            <p>BEST BIKE SELLER</p>
+          </div>
+          <div class="lower-nav">
+            <ul>
+              <li>
+
+                <a href="tel:+1234567890">
+                  <i class="fas fa-mobile-alt mobile-icon"></i>
+                  +123 456 7890</a>
+                <p class="call-timings"> Mon-Fri: 8:30am-7:30pm; Sat-Sun: 9:30am-4:30pm</p>
+              </li>
+
+              <li>
+
+                <a href="index.html">
+                  <i class="fas fa-star"></i>
+                  <p>WHISHLIST</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="index.html">
+                  <i class="fas fa-motorcycle"></i>
+                  <p>COMPARE</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="shop.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <p>MY CART</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>
+  <main>
+    <nav>
+      <section class="main-nav">
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="photoAlbum.html">GALLARY</a></li>
+            <li><a href="events.html" class="active">EVENTS</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blogs.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+          </ul>
+        </div>
+        <div class="intro center container">
+          <div>
+            <h1>OUR EVENTS</h1>
+
+            <h2 class="ch"><a href="index.html">Home</a></h2>
+            <h2>> Events</h2>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <section class="up-events-sec">
+      <div class="container">
+        <div class="upcoming-events">
+          <div class="widget-wrapper">
+            <div class="widget-heading">
+              <h2>UPCOMING EVENT</h2>
+              <h3>
+                <a href="events.html#upcoming-event">HIMALAYAS, JUNE 17-18, 2020</a>
+              </h3>
+            </div>
+            <div class="countdown-clock">
+              <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+              </ul>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a class="iframe" id="iframe" href="https://www.youtube.com/embed/1Q3LojC1wf8">
+              <img src="assets/images/6.jpg" alt="event-video">
+            </a>
+            <div class="video-heading">
+              <h3>WATCH US IN<br>
+                ACTION
+              </h3>
+              <a href="photoAlbum.html">
+                <span>MORE PHOTOS & VIDEOS</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <div class="container">
+        <div class="latest-events">
+          <div class="events" id="upcoming-event">
+            <h2>SEPTEMBER 2020</h2>
+            <div>
+              <img src="assets/images/13.jpg" alt="Rolling Thunder Ride For Freedom Pic">
+              <div class="events-details">
+                <h3>Rolling Thunder Ride For Freedom</h3>
+                <div>
+                  <span class="event-meta">
+                    <span>
+                      September 17, 2021 - November 13, 2022
+                    </span>
+                    Downtown Leesburg <br> 715 W Main Street, Downtown Leesburg
+                    715 W Main Street <br> Leesburg, Florida 34749 <br>
+                    Leesburg, FL 34749 United States
+                    <p>
+                      14 days, 2000 kms, the high mountain passes, the pristine blue lake , the cold desert,
+                      the second coldest inhabitated place in the world, old ruins, and the rustic landscape
+                      invites the rugged biker in us to explore...
+                    </p>
+
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="events">
+            <h2>FEBRUARY 2021</h2>
+            <div>
+              <img src="https://demo2.wpopal.com/lexrider/wp-content/uploads/2017/08/event-2-620x572.jpg"
+                alt="event-promotion Pic">
+              <div class="events-details">
+                <h3>8 Must-Have Smart Home Products</h3>
+                <div>
+                  <span class="event-meta">
+                    <p>
+                      Vestibulum tristique urna ac erat porta, nec consequat dolor blandit. Fusce eleifend porta turpis
+                      blandit tincidunt. In euismod aliquam massa id cursus. Mauris scelerisque mi nisi, ut ullamcorper
+                      turpis lobortis non. Suspendisse elit erat, gravida ut rhoncus ac, vestibulum quis erat. Nulla ac
+                      condimentum mauris, ac laoreet enim. Pellentesque nunc nibh, lobortis ut vestibulum sit amet,
+                      accumsan eu erat. Nulla porta dictum ligula, non adipiscing turpis varius a. Donec fermentum
+                      lorem velit, a pellentesque tellus sollicitudin a. Sed sem sem,…
+                    </p>
+
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="events">
+            <h2>DECEMBER 2021</h2>
+            <div>
+              <img src="assets/images/8.jpg" alt="event promotion Pic">
+              <div class="events-details">
+                <h3>Border Hounds</h3>
+                <div>
+                  <span class="event-meta">
+                    <p>
+                      14 days, 2000 kms, the high mountain passes, the pristine blue lake , the cold desert,
+                      the second coldest inhabitated place in the world, old ruins, and the rustic landscape
+                      invites the rugged biker in us to explore...
+                    </p>
+
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn" href="#">Previous Events</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-top center">
+      <div class="container">
+        <div class="motclub-icon">
+          <a href="#">
+            <i class="fas fa-motorcycle"></i>
+            <span>MOT</span>CLUB
+          </a>
+        </div>
+        <div class="center">
+          <ul class="social-media-icons">
+            <li>
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://wwww.youtube.com"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="info center">
+      <div class="container">
+
+        <div class="about-div">
+          <h2>ABOUT MOTCLUB</h2>
+          <p>
+            If you are looking to find a group
+            you’ve found us. We were founded as a formal motorcycle club in Boston in 1985,
+            and are still going strong. We focus on safe riding and we also ride for charities
+            that are near and dear to our hearts.
+          </p>
+          <a class="btn" href="about.html">MORE INFO</a>
+        </div>
+
+        <div>
+
+          <h2>LETEST EVENT</h2>
+          <div class="events">
+            <div>
+
+              <div class="event-date" id="clock-trigger">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">15</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">THUNDER ROLLING</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+            <div>
+
+              <div class="event-date">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">07</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">BORDER HOUNDS</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+            <div>
+
+              <div class="event-date">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">04</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">ACE HIGH BIKES</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+            <div>
+
+              <div class="event-date">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">02</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">CHOSEN FEW</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>CONTACT INFO</h2>
+          <div class="address">
+            <address>
+              <div>
+                <a class="text-dec phone-num" href="tel:+44123456789">(+44) 123 456 789</a>
+              </div>
+              <div>
+                <h3>CLUB ADDRESS</h3>
+                638 Ground Road, Main Station,<br><br>
+                London 00765
+              </div>
+              <div class="email">
+                <div>
+                  <h3>Email:</h3>
+                </div>
+                <div>
+                  <a class="text-dec" href="mailto:hello@PSDFrebies.com">hello@PSDFrebies.com</a><br><br>
+                  <a class="text-dec" href="mailto:hello@PSDFrebies.com">hello@PSDFrebies.com</a>
+                </div>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="copy-right center">
+      <span> © Copyrights 2015 by PSDFrebies.com. All rights reserved.</span>
+    </section>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top">
+    <i class="fas fa-angle-up"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

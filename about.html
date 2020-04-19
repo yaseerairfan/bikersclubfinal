@@ -1,0 +1,589 @@
+<html>
+
+<head>
+  <title>Club Info&nbsp;&ndash;&nbsp;Bikers&nbsp;Club</title>
+  <!-- JS -->
+  <!-- jquery -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- animationjs -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- jquery-ui -->
+  <script src="assets/js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  <!-- slick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+  <!-- Stylesheets -->
+  <!-- jquery-ui -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/js/jquery-ui/jquery-ui.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/js/jquery-ui/jquery-ui.theme.min.css"> -->
+  <!-- font-family -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+  <!-- Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+  <!-- local CSS -->
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+</head>
+
+<body>
+  <div class="loader-wrapper" id="preloader">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <div class="search-popUp" id="search-popU">
+    <form action="index.html">
+      <input id="main-search-engine" class="main-search-bar" type="text" placeholder="Search...">
+      <button type="submit"><i class="fas fa-search search-it-now"></i></button>
+    </form>
+    <i class="fas fa-times cross-icon" id="cross-icon"></i>
+
+
+  </div>
+  <header>
+    <section>
+      <div class="container">
+        <div class="upper-nav">
+
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fas fa-user"></i>My Account
+              </a>
+            </li>
+            <li>
+              <a href="shop.html">
+                <i class="fas fa-shopping-cart"></i>
+                Cart
+              </a>
+            </li>
+            <li><a href="#">
+                <i class="fas fa-check-circle"></i>
+                Check Out
+              </a>
+            </li>
+            <li class="main-search-icon" id="main-search-icon">
+              <i class="fas fa-search"></i>
+            </li>
+          </ul>
+
+        </div>
+        <div class="logonav">
+          <div class="logo">
+            <a href="index.html">
+              Bikers<span>Club</span>
+            </a>
+            <p>BEST BIKE SELLER</p>
+          </div>
+          <div class="lower-nav">
+            <ul>
+              <li>
+
+                <a href="tel:+1234567890">
+                  <i class="fas fa-mobile-alt mobile-icon"></i>
+                  +123 456 7890</a>
+                <p class="call-timings"> Mon-Fri: 8:30am-7:30pm; Sat-Sun: 9:30am-4:30pm</p>
+              </li>
+
+              <li>
+
+                <a href="index.html">
+                  <i class="fas fa-star"></i>
+                  <p>WHISHLIST</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="index.html">
+                  <i class="fas fa-motorcycle"></i>
+                  <p>COMPARE</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="shop.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <p>MY CART</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>
+  <main>
+    <nav>
+      <section class="main-nav">
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html" class="active">ABOUT US</a></li>
+            <li><a href="photoAlbum.html">GALLARY</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blogs.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+          </ul>
+        </div>
+        <div class="intro center container">
+          <div>
+            <h1>ABOUT US</h1>
+
+            <h2 class="ch"><a href="index.html">Home</a></h2>
+            <h2>> About us</h2>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <!-- /* %%%%%%%%%%%%%%%%%%%%%%%%%%.......SECTION 1.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */ -->
+    <section>
+      <div class="container center2 club-intro">
+        <h2 class="VN-club-heading about-h2-styling " id="about-h2-1">
+          VINTAGE MOTORCYCLE CLUB<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;OF
+        </h2>
+        <div class="intro-para" id="about-intro-para">
+          <p>
+            If you are looking to find a group of well-established and safe to ride with, you’ve found
+            us. We were founded as a formal motorcycle club in Boston in 1985, and are still going
+            strong. We focus on safe riding and we also ride for charities that are near and dear
+            to our hearts.
+          </p>
+          <p>
+            We are a national club with chapters and members across the country. Our passion for
+            motorcycling provides a unique bond within the legal community. We ride virtually every
+            make and model of bike, although a majority rides Harleys.
+          </p>
+        </div>
+        <a id="about-btn-1" class="btn" href="blogs.html">EXPLORE OUR RIDES</a>
+        <div class="center2 founders-img">
+          <img id="about-img1" src="https://demo2.wpopal.com/lexrider/wp-content/uploads/2019/04/image1_about.jpg"
+            alt="founder's image">
+          <img id="about-img2" src="https://demo2.wpopal.com/lexrider/wp-content/uploads/2019/04/image2_about.jpg"
+            alt="founder's image">
+        </div>
+        <h2 class="about-h2-styling" id="about-h2-2">
+          &nbsp;&nbsp;&nbsp;&nbsp;WE KEPT WHAT WE<br>
+          LOVED ABOUT THE BIKE
+        </h2>
+        <div class="bottom-line"></div>
+      </div>
+
+    </section>
+
+    <!-- /* %%%%%%%%%%%%%%%%%%%%%%%%%%.......SECTION 2.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */ -->
+    <section>
+      <div class="center2 container what-to-do">
+        <span class="act-benefits" id="about-activity">
+          <i class="fas fa-align-right"></i>
+          CLUB ACTIVITIES
+          <i class="fas fa-align-left"></i>
+        </span>
+        <h2 class="about-h2-styling wtd-wcu" id="about-h2-3">
+          WHAT WE DO
+        </h2>
+        <div class="activities center">
+          <div class="featured-box-wrapper" id="featured-box-1">
+            <i class="fas fa-user"></i>
+            <h3 class="act-h3">WE RIDE BIKES</h3>
+            <p>
+              Lex Rider regularly organises ride-outs suitable for all types of bikes and speeds.
+              Our ride-outs range from short, local routes, to continental travel.
+            </p>
+          </div>
+          <div class="featured-box-wrapper" id="featured-box-2">
+            <i class="fas fa-user"></i>
+            <h3 class="act-h3">WE RIDE BIKES</h3>
+            <p>
+              We support both local and national charities such as air ambulance, blood bikes,
+              and the teenage cancer trust through the annual Stephen Sutton Ride
+            </p>
+          </div>
+          <div class="featured-box-wrapper" id="featured-box-3">
+            <i class="fas fa-user"></i>
+            <h3 class="act-h3">WE RIDE BIKES</h3>
+            <p>
+              We have such a diverse collection of bikes through the club. We attend and exhibit
+              at most of the major motorcycle shows.
+            </p>
+          </div>
+        </div>
+        <a id="about-btn-2" class="btn" href="events.html">SEE OUR ACTIVITIES</a>
+      </div>
+
+    </section>
+
+
+    <!-- /* %%%%%%%%%%%%%%%%%%%%%%%%%%.......SECTION 3.......%%%%%%%%%%%%%%%%%%%%%%%%%%% */ -->
+
+    <section class="all-counts center">
+      <div class="container" id="counter-wrapper">
+        <div class="featured-box-wrapper">
+          <h2>
+            <span class="counter">
+              185
+            </span>
+          </h2>
+          <div class="line">
+            MEMBERS
+          </div>
+        </div>
+        <div class="featured-box-wrapper">
+          <h2>
+            <span class="counter">
+              486
+            </span>
+          </h2>
+          <div class="line">
+            CLUB RIDERS
+          </div>
+        </div>
+        <div class="featured-box-wrapper">
+          <h2>
+            <span class="counter">
+              1561
+            </span>
+          </h2>
+          <div class="line">
+            REPAIRS IN WORKSHOP
+          </div>
+        </div>
+        <div class="featured-box-wrapper">
+          <h2>
+            <span class="counter">
+              219561
+            </span>
+          </h2>
+          <div class="line">
+            TOTAL KMS BY THE CLUB
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="center2 container why-choose-us">
+        <span class="act-benefits" id="about-benefits">
+          <i class="fas fa-align-right"></i>
+          OUR BENEFITS
+          <i class="fas fa-align-left"></i>
+        </span>
+        <h2 class="about-h2-styling wtd-wcu" id="about-h2-4">WHY CHOOSE US</h2>
+        <img id="about-img3" src="https://demo2.wpopal.com/lexrider/wp-content/uploads/2019/04/image3_about.jpg"
+          alt="founder's image">
+        <div class="elementor-accordian-wrapper" id="elementor-accordion-wrapper">
+          <div id="elementor-accordion">
+
+            <h3>
+              Meet new and like-minded folks
+            </h3>
+            <div>
+              <p>
+                Being part of a ride group is a great way to get that missing hint of novelty in your
+                life. Each ride takes you to new places, makes you see new faces, and while each face
+                comes with its own eccentricities, the one thing that remains a common thread among
+                all is their love for rubber on tarmac and freedom.
+              </p>
+            </div>
+
+
+            <h3>
+              Happiness multiplies when shared
+            </h3>
+            <div>
+              <p>
+                Being part of a ride group is a great way to get that missing hint of novelty in your
+                life. Each ride takes you to new places, makes you see new faces, and while each face
+                comes with its own eccentricities, the one thing that remains a common thread among
+                all is their love for rubber on tarmac and freedom.
+              </p>
+            </div>
+
+
+            <h3>
+              Rides are safer
+            </h3>
+            <div>
+              <p>
+                Being part of a ride group is a great way to get that missing hint of novelty in your
+                life. Each ride takes you to new places, makes you see new faces, and while each face
+                comes with its own eccentricities, the one thing that remains a common thread among
+                all is their love for rubber on tarmac and freedom.
+              </p>
+            </div>
+
+
+            <h3>
+              Get More Attention
+            </h3>
+            <div>
+              <p>
+                Being part of a ride group is a great way to get that missing hint of novelty in your
+                life. Each ride takes you to new places, makes you see new faces, and while each face
+                comes with its own eccentricities, the one thing that remains a common thread among
+                all is their love for rubber on tarmac and freedom.
+              </p>
+            </div>
+
+
+            <h3>
+              Get to know more machines
+            </h3>
+            <div>
+              <p>
+                Being part of a ride group is a great way to get that missing hint of novelty in your
+                life. Each ride takes you to new places, makes you see new faces, and while each face
+                comes with its own eccentricities, the one thing that remains a common thread among
+                all is their love for rubber on tarmac and freedom.
+              </p>
+            </div>
+
+
+            <h3>
+              Be part of a Legacy
+            </h3>
+            <div>
+              <p>
+                Being part of a ride group is a great way to get that missing hint of novelty in your
+                life. Each ride takes you to new places, makes you see new faces, and while each face
+                comes with its own eccentricities, the one thing that remains a common thread among
+                all is their love for rubber on tarmac and freedom.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section>
+      <div class=" container news-and-posts">
+        <div class="posts">
+          <span class="act-benefits">
+            <i class="fas fa-align-right"></i>
+            LETEST NEWS
+          </span>
+          <h2 class="about-h2-styling wtd-wcu post-h2">
+            RECENT<br>POSTS
+          </h2>
+          <a class="btn" href="#">SEE ALL NEWS</a>
+        </div>
+        <div class="all-news">
+          <div class="news">
+            <a href="#">
+              <img src="https://demo2.wpopal.com/lexrider/wp-content/uploads/2019/04/blog-14-600x390.jpg"
+                alt="news picture">
+            </a>
+            <div>
+              <a class="post-heading" href="#">
+                <h3>Bold, bright, animated,... </h3>
+              </a>
+              <span class="admin">
+                by
+                <a href="#">Admin</a>
+              </span>
+              <a class="post-date" href="#">March 13 2020</a>
+
+            </div>
+          </div>
+          <div class="news">
+
+            <a href="#">
+              <img src="https://demo2.wpopal.com/lexrider/wp-content/uploads/2019/04/blog-13-600x390.jpg"
+                alt="news picture">
+            </a>
+            <div>
+              <a class="post-heading" href="#">
+                <h3>Bold, bright, animated,... </h3>
+              </a>
+              <span class="admin">
+                by
+                <a href="#">Admin</a>
+              </span>
+              <a class="post-date" href="#">March 13 2020</a>
+
+            </div>
+          </div>
+          <div class="news">
+            <a href="#">
+              <img src="https://demo2.wpopal.com/lexrider/wp-content/uploads/2019/04/blog-12-600x390.jpg"
+                alt="news picture">
+            </a>
+            <div>
+              <a class="post-heading" href="#">
+                <h3>Bold, bright, animated,... </h3>
+              </a>
+              <span class="admin">
+                by
+                <a href="#">Admin</a>
+              </span>
+              <a class="post-date" href="#">March 13 2020</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ride-with-us">
+      <div class="container center2" id="ride-with-us">
+        <h2 class="act-benefits">
+          COME RIDE WITH US!
+        </h2>
+        <h2 class="about-h2-styling family-hd">
+          BECOME A PART OF
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OUR FAMILY
+        </h2>
+        <a class="btn" href="contact.html">CONTACT US</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-top center">
+      <div class="container">
+        <div class="motclub-icon">
+          <a href="#">
+            <i class="fas fa-motorcycle"></i>
+            <span>MOT</span>CLUB
+          </a>
+        </div>
+        <div class="center">
+          <ul class="social-media-icons">
+            <li>
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://wwww.youtube.com"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="info center">
+      <div class="container">
+
+        <div class="about-div">
+          <h2>ABOUT MOTCLUB</h2>
+          <p>
+            If you are looking to find a group
+            you’ve found us. We were founded as a formal motorcycle club in Boston in 1985,
+            and are still going strong. We focus on safe riding and we also ride for charities
+            that are near and dear to our hearts.
+          </p>
+          <a class="btn" href="about.html">MORE INFO</a>
+        </div>
+
+        <div>
+
+          <h2>LETEST EVENT</h2>
+          <div class="events">
+            <div>
+
+              <div class="event-date" id="clock-trigger">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">15</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">THUNDER ROLLING</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+            <div>
+
+              <div class="event-date">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">07</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">BORDER HOUNDS</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+            <div>
+
+              <div class="event-date">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">04</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">ACE HIGH BIKES</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+            <div>
+
+              <div class="event-date">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">02</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">CHOSEN FEW</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>CONTACT INFO</h2>
+          <div class="address">
+            <address>
+              <div>
+                <a class="text-dec phone-num" href="tel:+44123456789">(+44) 123 456 789</a>
+              </div>
+              <div>
+                <h3>CLUB ADDRESS</h3>
+                638 Ground Road, Main Station,<br><br>
+                London 00765
+              </div>
+              <div class="email">
+                <div>
+                  <h3>Email:</h3>
+                </div>
+                <div>
+                  <a class="text-dec" href="mailto:hello@PSDFrebies.com">hello@PSDFrebies.com</a><br><br>
+                  <a class="text-dec" href="mailto:hello@PSDFrebies.com">hello@PSDFrebies.com</a>
+                </div>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="copy-right center">
+      <span> © Copyrights 2015 by PSDFrebies.com. All rights reserved.</span>
+    </section>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top">
+    <i class="fas fa-angle-up"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

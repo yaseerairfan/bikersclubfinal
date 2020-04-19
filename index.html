@@ -1,0 +1,572 @@
+<html>
+
+<head>
+  <title>Bikers&nbsp;Club</title>
+  <!-- JS -->
+  <!-- jquery -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <!-- animationjs -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- slick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <!-- validation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <!-- sweetalert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Stylesheets -->
+  <!-- font-family -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+  <!-- local CSS -->
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+
+<body>
+  <div class="loader-wrapper" id="preloader">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <div class="search-popUp" id="search-popU">
+    <form action="index.html">
+      <input id="main-search-engine" class="main-search-bar" type="text" placeholder="Search...">
+      <button type="submit"><i class="fas fa-search search-it-now"></i></button>
+    </form>
+    <i class="fas fa-times cross-icon" id="cross-icon"></i>
+
+
+  </div>
+  <header>
+    <section>
+      <div class="container">
+        <div class="upper-nav">
+
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fas fa-user"></i>My Account
+              </a>
+            </li>
+            <li>
+              <a href="shop.html">
+                <i class="fas fa-shopping-cart"></i>
+                Cart
+              </a>
+            </li>
+            <li><a href="#">
+                <i class="fas fa-check-circle"></i>
+                Check Out
+              </a>
+            </li>
+            <li class="main-search-icon" id="main-search-icon">
+              <i class="fas fa-search"></i>
+            </li>
+          </ul>
+
+        </div>
+        <div class="logonav">
+          <div class="logo">
+            <a href="index.html">
+              Bikers<span>Club</span>
+            </a>
+            <p>BEST BIKE SELLER</p>
+          </div>
+          <div class="lower-nav">
+            <ul>
+              <li>
+
+                <a href="tel:+1234567890">
+                  <i class="fas fa-mobile-alt mobile-icon"></i>
+                  +123 456 7890</a>
+                <p class="call-timings"> Mon-Fri: 8:30am-7:30pm; Sat-Sun: 9:30am-4:30pm</p>
+              </li>
+
+              <li>
+
+                <a href="index.html">
+                  <i class="fas fa-star"></i>
+                  <p>WHISHLIST</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="index.html">
+                  <i class="fas fa-motorcycle"></i>
+                  <p>COMPARE</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="shop.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <p>MY CART</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>
+
+
+  <main>
+    <nav>
+      <section class="main-nav">
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="photoAlbum.html">GALLARY</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blogs.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+          </ul>
+        </div>
+        <div class="intro center container">
+          <div>
+            <h2>COME RIDE WITH US</h2>
+            <h1>LIVE TO RIDE</h1>
+            <p>
+              Ride with us on a journey into the unknown. Explore new frontiers.Wake
+              <br>
+              up in the morning with the thrill of being somewhere you have never been before.
+
+            </p>
+
+            <a class="btn" href="blogs.html">EXPLORE OUR RIDES</a>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <!-- SECTION 1 -->
+    <section class="club-info ">
+      <div class="container" id="crew-gallary">
+        <h2>THE HIERARCHY OF BIKERS CLUB</h2>
+        <div class="text-and-gallary">
+          <div class="text">
+            <h3>Meet our crew members</h3>
+            <p>
+              A motorcycle club assumes a serious hierarchy in leadership just like any other organization.
+              At the top is the president who is the head of the executive committee and the MC CEO.
+            </p>
+            <a href="about.html" class="btn">
+              CLUB HISTORY
+            </a>
+          </div>
+
+          <div class="gallary">
+            <!-- <div><img src="assets/images/crew1.jpg" alt="image1"></div> -->
+            <div><img src="assets/images/crew2.jpg" alt="image2"></div>
+            <div><img src="assets/images/crew3.jpg" alt="image3"></div>
+            <!-- <div><img src="assets/images/crew4.jpg" alt="image4"></div> -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+
+    <section>
+      <div class="rider-text container" id="rider-text">
+        <h2>
+          WE AIM FOR A FRIENDLY CLUB FOR ENTHUSIASTICS</h2>
+        <p>
+          Right from the start the club ran regular competitive events mainly on the roads in and around Launceston.
+          Hill climbs were held at places like Henry Street, High Street, Denison Road, and Landfall Hill. Acceleration
+          test were held at many places along the Midland Highway, The “flying mile” near Longford, Rochalea Road and
+          Nile Road.
+        </p>
+
+      </div>
+      <div class="riders-wrapper ">
+        <div class="riders">
+          <div>
+            <img src="assets/images/rider1.jpg" alt="rider1">
+          </div>
+          <div>
+            <img src="assets/images/rider2.jpg" alt="rider2">
+          </div>
+          <div>
+            <img src="assets/images/rider3.jpg" alt="rider3">
+          </div>
+          <div>
+            <img src="assets/images/rider4.jpg" alt="rider4">
+          </div>
+          <div>
+            <img src="assets/images/rider5.jpg" alt="rider5">
+          </div>
+          <div>
+            <img src="assets/images/rider6.jpg" alt="rider6">
+          </div>
+        </div>
+        <div class="riders-stories container">
+          <div id="story-1">
+            <h2>DEATH VALLEY:A BIKER'S TRAVEL STORY</h2>
+            <p>
+              Once we descended into the Valley over Panamint Pass, we left all traces of that storm in our wake and
+              enjoyed warm,
+              calm weather for the rest of our buzzing trip. In retrospect, this was an outstanding adventure about
+              which we still talk....
+            </p>
+            <a class="btn" href="blogs.html">READ MORE</a>
+          </div>
+          <div id="story-2">
+            <h2>JOURNEY TOOK US THROUGH TO THE LIFE</h2>
+            <p>
+              In looking for alternative routes, as a sharp guy, i left my visor open and behold my first fly in the
+              helmet
+              experience when on the highway.I was perturbed with the buzzing in the helmet and had to make an emergency
+              stop to save myself....
+            </p>
+            <a class="btn btn2" href="blogs.html">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="testomoinal center">
+      <div class="container tmslider" id="feedback">
+
+
+        <div class="tm1">
+
+
+          <div class="pic center">
+            <div class="crew-1"></div>
+          </div>
+          <div class="text">
+            <p>
+              &#8220;We met some really great people that you wouldn’t necessarily expect to meet in your normal
+              day-to-day living.
+              It gave me a really great insight into the diverse ways Americans think.&#8221;
+            </p>
+            <h2>JOHN MURPHY</h2>
+            <p>MEMBER</p>
+          </div>
+        </div>
+
+        <div class="tm1">
+          <div class="pic center">
+            <div class="crew-2"></div>
+          </div>
+          <div class="text">
+            <p>
+              &#8220;Such a great community to be part of. The commitment and service you all provide to the community
+              is
+              just outstanding.It gave me a really great insight into the diverse ways Americans think.&#8221;
+            </p>
+            <h2>OCTAVIA</h2>
+            <p>MANAGER</p>
+          </div>
+        </div>
+
+        <div class="tm1">
+          <div class="pic center">
+            <div class="crew-3"></div>
+          </div>
+          <div class="text">
+            <p>
+              &#8220;Thank You! I just can't get enough of Nouv.
+              I want to get a T-Shirt with Nouv on it so I can show it off to everyone.It gave me a really great insight
+              into the
+              diverse ways Americans think.&#8221;
+            </p>
+            <h2>RAVEN JOE</h2>
+            <p>CUSTOMER</p>
+          </div>
+        </div>
+        <div class="tm1">
+          <div class="pic center">
+            <div class="crew-4"></div>
+          </div>
+          <div class="text">
+            <p>
+              &#8220;Ello Gov'nr. Thank you for my bike. I really enjoy riding it. My bike is grey, big, and goes very
+              fast.
+              They dont have bikes from where I'm from. so it was nice to get one. It was very genorous. Thank you! I
+              only ride
+              it in my parking lot.&#8221;
+            </p>
+            <h2>MORIARTY</h2>
+            <p>our customers are enjoying</p>
+          </div>
+        </div>
+
+
+
+        <!-- xxxxxxxxxxxxxx -->
+
+      </div>
+    </section>
+
+
+
+    <!-- SECTION 5 -->
+    <section class="bike-categories center">
+      <div class="container">
+        <div class="bikes-details" id="bikes-detailes">
+          <h2>WE ARE THERE WHERE YOU START YOUR JOURNEY</h2>
+          <p>
+            Add bike ride to your vacation.Take yourself off to roads with your dream bike.No limitations and no
+            difficulty.
+            Get a chance to ride your favourite bike.Explore the area by riding youself.Services available anytime for
+            the members.
+          </p>
+        </div>
+        <div class="category-slider">
+          <div>
+            <img src="assets/images/c1.jpg" alt="bike image">
+            <a class="bike-info-btn btn" href="shop.html">RENT IT OUT</a>
+          </div>
+          <div>
+            <img src="assets/images/c2.jpg" alt="bike image">
+            <a class="bike-info-btn btn" href="shop.html">RENT IT OUT</a>
+          </div>
+          <div>
+            <img src="assets/images/c3.jpg" alt="bike image">
+            <a class="bike-info-btn btn" href="shop.html">RENT IT OUT</a>
+          </div>
+          <div>
+            <img src="assets/images/c4.jpg" alt="bike image">
+            <a class="bike-info-btn btn" href="shop.html">RENT IT OUT</a>
+
+          </div>
+          <div>
+            <img src="assets/images/c5.jpg" alt="bike image">
+            <a class="bike-info-btn btn" href="shop.html">RENT IT OUT</a>
+          </div>
+          <div>
+            <img src="assets/images/c6.jpg" alt="bike image">
+            <a class="bike-info-btn btn" href="shop.html">RENT IT OUT</a>
+          </div>
+          <div>
+            <img src="assets/images/c7.jpg" alt="bike image">
+            <a class="bike-info-btn btn" href="shop.html">RENT IT OUT</a>
+          </div>
+          <div>
+            <img src="assets/images/c8.jpg" alt="bike image">
+            <a class="bike-info-btn otherbtn btn" href="shop.html">RENT IT OUT</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- SECTION 6 -->
+    <section class="blog">
+      <div class="blog-details">
+        <h2>CLUB BLOG</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and
+        </p>
+        <a href="#" class="btn">
+          LEARN MORE
+        </a>
+      </div>
+      <div class="blogs">
+        <div class="blog-wrapper">
+          <a href="blogs.html#blog1">
+            <img id="blog-img" src="assets/images/blog1(new).jpg" alt="Blog 1">
+            <div class="overlay center">
+              <h3 id="blog-h3">Off Road Adventure In Casca</h3>
+            </div>
+          </a>
+        </div>
+        <div class="blog-wrapper">
+          <a href="blogs.html#blog5">
+            <img id="blog-img" src="assets/images/blog6(new).jpg" alt="Blog 1">
+            <div class="overlay center">
+              <h3 id="blog-h3">West Africa Tour</h3>
+            </div>
+          </a>
+        </div>
+        <div class="blog-wrapper">
+          <a href="blogs.html#blog3">
+            <img id="blog-img" src="assets/images/blog4(new).jpg" alt="Blog 1">
+            <div class="overlay center">
+              <h3 id="blog-h3">From Lagas to Europe</h3>
+            </div>
+          </a>
+        </div>
+        <div class="blog-wrapper">
+          <a href="blogs.html#blog9">
+            <img id="blog-img" src="assets/images/blog9(new).jpg" alt="Blog 1">
+            <div class="overlay center">
+              <h3 id="blog-h3">Spring Wildflowers</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 7 -->
+    <section class="newsletter center">
+      <div class="container" id="newsletter-form">
+        <h2 class="signup-heading">
+          BECOME ONE OF US
+        </h2>
+        <div class="email-address">
+          <p>
+            Bikers Club regularly organises ride-outs suitable for all types of bikes and speeds.</p>
+          <div>
+            <form id="newsform" class="newsform">
+              <input type="email" name="email" id="signup-email" placeholder="Enter Your Email Address">
+              <button type="submit" class="btn" id="submit-email">SUBMIT</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-top center">
+      <div class="container">
+        <div class="motclub-icon">
+          <a href="#">
+            <i class="fas fa-motorcycle"></i>
+            <span>MOT</span>CLUB
+          </a>
+        </div>
+        <div class="center">
+          <ul class="social-media-icons">
+            <li>
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://wwww.youtube.com"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="info center">
+      <div class="container">
+
+        <div class="about-div">
+          <h2>ABOUT MOTCLUB</h2>
+          <p>
+            If you are looking to find a group
+            you’ve found us. We were founded as a formal motorcycle club in Boston in 1985,
+            and are still going strong. We focus on safe riding and we also ride for charities
+            that are near and dear to our hearts.
+          </p>
+          <a class="btn" href="about.html">MORE INFO</a>
+        </div>
+
+        <div>
+
+          <h2>LETEST EVENT</h2>
+          <div class="events">
+            <div>
+
+              <div class="event-date" id="clock-trigger">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">15</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">THUNDER ROLLING</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+            <div>
+
+              <div class="event-date">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">07</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">BORDER HOUNDS</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+            <div>
+
+              <div class="event-date">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">04</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">ACE HIGH BIKES</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+            <div>
+
+              <div class="event-date">
+                <p><a href="events.html">MAR</a></p>
+                <div><a href="events.html">02</a></div>
+              </div>
+
+              <div class="event-details">
+                <h3><a href="events.html">CHOSEN FEW</a></h3>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>CONTACT INFO</h2>
+          <div class="address">
+            <address>
+              <div>
+                <a class="text-dec phone-num" href="tel:+44123456789">(+44) 123 456 789</a>
+              </div>
+              <div>
+                <h3>CLUB ADDRESS</h3>
+                638 Ground Road, Main Station,<br><br>
+                London 00765
+              </div>
+              <div class="email">
+                <div>
+                  <h3>Email:</h3>
+                </div>
+                <div>
+                  <a class="text-dec" href="mailto:hello@PSDFrebies.com">hello@PSDFrebies.com</a><br><br>
+                  <a class="text-dec" href="mailto:hello@PSDFrebies.com">hello@PSDFrebies.com</a>
+                </div>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="copy-right center">
+      <span> © Copyrights 2015 by PSDFrebies.com. All rights reserved.</span>
+    </section>
+  </footer>
+  <button class="scroll-top" id="scroll-top">
+    <i class="fas fa-angle-up"></i>
+  </button>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
